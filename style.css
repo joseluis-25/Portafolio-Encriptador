@@ -1,0 +1,233 @@
+* {
+    background: #f3f5fc;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+.logo {
+    padding-top: 50px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las columnas */
+    margin-top: 20px;
+}
+
+.columna-izquierda,
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los elementos dentro de cada columna */
+}
+
+.text-area {
+    border: none;
+    color: #0A3871;
+    text-transform: lowercase;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background: white;
+    background-image: url("Muñeco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    padding-left: 20px;
+    height: 400px; /* Ajusta según el tamaño deseado */
+    resize: none; /* Evita el cambio de tamaño del área de texto */
+}
+
+.boton-reinicio {
+    background-color: #f3f5fc;
+    border: none;
+    border-radius: 50%;
+    color: #0A3871;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+}
+
+.botones {
+    display: flex;
+    gap: 20px; /* Espacio entre los botones */
+}
+
+.btn-encriptar,
+.btn-desencriptar,
+.copiar {
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    width: 250px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.btn-desencriptar {
+    background: #D8DFE8;
+}
+
+.copiar {
+    background: #D8DFE8;
+    margin-left: 0; /* Elimina margen izquierdo para dispositivos móviles */
+    width: 100%;
+}
+.informacion{
+    color: #495057;
+    font-size: 18px;
+}
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .columna-izquierda,
+    .columna-derecha {
+        width: 100%;
+    }
+
+    .botones {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+        gap: 10px;
+        height: 100px;   
+    }
+
+    .boton-reinicio {
+        margin-top: 5px;
+        margin-left: 115px;
+    }
+    .copiar {
+        height: 50px;
+        width: 250px;
+        justify-content: center;
+        margin-left: 50px;
+    
+    .mensaje {
+        height: 50px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 20%;
+    }
+}
+/* Media Queries para tablet */
+@media ((min-width: 768px) and (max-width: 1024px))
+{
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botones {
+        margin-left: 50px;
+        gap: 10px;}
+
+    .boton-reinicio {
+        margin-top: 5px;
+        margin-left: 10px;
+        justify-content: center;
+    }
+    
+    .mensaje {
+        height: 200px; 
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 20%;
+    }
+}
+/* Media Queries para pc */
+@media (min-width: 1025px) 
+{
+    .main
+{
+    display: flex;
+    flex-direction: row;
+       
+}
+    .botones {
+        margin-left: 500px;
+        gap: 10px;}
+
+    .boton-reinicio {
+        margin-top: 5px;
+        margin-left: 10px;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        margin-left: 210px;
+    }
+    
+    .mensaje { 
+        height: 750px; 
+        margin-top: -100px;
+        
+    }
+    .btn-encriptar {
+        margin-left: -500px;
+        width: 250px;
+    }
+    
+    .btn-desencriptar {
+        margin-left: 10px;
+        width: 250px;
+    }
+    .text-area {
+        width: 100%;
+        padding: 10px;
+        height: 500;
+    }
+        
+    .copiar {
+        margin-top: -105px;
+        width: 250px;
+        margin-left: 75px;
+    }
+}
+@media (min-width: 1024px) {
+    .logo {
+        width: 10%;
+        margin-left: 400px;
+        margin-top: -50px;
+        
+    }
+}}
